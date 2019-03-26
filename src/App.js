@@ -6,7 +6,11 @@ class App extends Component {
   // set default state with example data
   // changing localDeliveries to null triggers the loading box
   state = {
-    localDeliveries: null
+    localDeliveries: [
+      { name: "bob", checkins: 1 },
+      { name: "ali", checkins: 3 },
+      { name: "Amira", checkins: 8 }
+    ]
   };
 
   // redefine react component class's componentDidMount
